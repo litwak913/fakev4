@@ -25,6 +25,8 @@
     "@tsconfig/svelte": "^2.0.0"
   },
   "dependencies": {
+    "@mdi/js": "^6.7.96",
+    "chota": "^0.8.0",
     "sirv-cli": "^2.0.0",
     "svelte-chota": "^1.8.6"
   }

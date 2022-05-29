@@ -1,24 +1,28 @@
 <script lang="ts">
-	import {Nav} from 'svelte-chota'
-	export let name: string;
+	import "chota";
+	import { Container, Row, Col } from "svelte-chota";
+	import AppBar from "./AppBar.svelte";
+	import ResCard from "./ResCard.svelte";
+	import Banner from "./Banner.svelte";
 </script>
 
-<header>
-	<Nav class="nav">
-
-	</Nav>
-</header>
+<AppBar />
+<Container style="padding-top:20px;">
+	<Banner />
+	<Row>
+		<Col size="9" >
+			<ResCard/>
+		</Col>
+		<Col size="3" />
+	</Row>
+</Container>
 
 <style>
-	header {
-		background-color: #4caf50;
-		width: 100%;
-		height: 10%;
-		padding:0;
-		box-shadow: 2px 0px 4px #000000;
+	:global(:root) {
+		--grid-maxWidth: 120rem !important;
+		--color-primary: #4caf50 !important;
 	}
-	.nav {
-		width: 60%;
-		margin: 0 0 auto;
+	.border {
+		padding-top: 10px;
 	}
 </style>
