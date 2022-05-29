@@ -19,12 +19,12 @@
 				<ResCard />
 				<ResCard />
 				<ResCard />
+				<ResCard />
 			</div>
 		</Col>
 		<Col size="3" />
 	</Row>
 </Container>
-
 <style>
 	:global(:root) {
 		--grid-maxWidth: 120rem !important;
