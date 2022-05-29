@@ -35,7 +35,4 @@
 		grid-template-columns: 400px 400px;
 		grid-column-gap: 20px;
 	}
-	.border {
-		padding-top: 10px;
-	}
 </style>
