@@ -7,17 +7,20 @@
         <Row>
             <Col size="3"><img src="https://via.placeholder.com/160" /></Col>
             <Col size="9">
-                <h1>123</h1>
-                <p>123</p>
+                <h1>全部</h1>
+                <p class="text-grey">全部资源</p>
             </Col>
         </Row>
 
         <Tabs>
-            <Tab>123</Tab>
-            <Tab>456</Tab>
-            <Tab>123</Tab>
-            <Tab>456</Tab>
-            <Tab>123</Tab>
+            <Tab>全部</Tab>
+            <Tab>服务器插件</Tab>
+            <Tab>模组</Tab>
+            <Tab>软件</Tab>
+            <Tab>地图</Tab>
+            <Tab>资源包</Tab>
+            <Tab>整合包</Tab>
+            <Tab>数据包</Tab>
         </Tabs>
     </Col>
     <Col size="4"><img src="https://via.placeholder.com/408x180" /></Col>

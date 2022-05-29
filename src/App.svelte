@@ -10,7 +10,13 @@
 <Container style="padding-top:20px;">
 	<Banner />
 	<Row>
-		<Col size="9" >
+		<Col size="9" style="column-count:2;" >
+			<ResCard/>
+			<ResCard/>
+			<ResCard/>
+			<ResCard/>
+			<ResCard/>
+			<ResCard/>
 			<ResCard/>
 		</Col>
 		<Col size="3" />
