@@ -6,7 +6,7 @@
 <header>
 	<Nav class="is-vertical-align">
 		<svelte:fragment slot="left">
-			<a href="/"><img src="/icon.png" /></a>
+			<a href="/"><img src="/icons/logo.png" /></a>
 			<a href="/" class="text-white">资源</a>
 			<a href="/" class="text-white">社区</a>
 		</svelte:fragment>

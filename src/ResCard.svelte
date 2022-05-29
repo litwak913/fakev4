@@ -3,11 +3,8 @@
     import { mdiAccount, mdiClockOutline } from "@mdi/js";
 </script>
 
-<Card
-    style="width:400px;
-    margin:10px 0;
-    page-break-inside:avoid;"
->
+<div class="res">
+<Card>
     <Row>
         <Col size="4"><img src="https://via.placeholder.com/80" /></Col>
         <Col size="8">
@@ -27,6 +24,7 @@
     <Icon class="text-grey" src={mdiClockOutline} />
     <span class="text-grey">1970/01/01 08:00:00</span>
 </Card>
+</div>
 
 <style>
     .res-title {
