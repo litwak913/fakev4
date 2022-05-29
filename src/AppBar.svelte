@@ -11,15 +11,18 @@
 			<a href="/" class="text-white">社区</a>
 		</svelte:fragment>
 		<svelte:fragment slot="right">
-			<Field gapless class="is-vertical-align">
-				<Input />
-				<Button icon={mdiMagnify} />
-			</Field>
-			<img
-				src="https://via.placeholder.com/160"
-				class="is-rounded avatar"
-			/>
-			<Button icon={mdiBell} primary />
+			<div class="is-vertical-align">
+				<Field gapless class="is-vertical-align">
+					<Input />
+					<Button icon={mdiMagnify} />
+				</Field>
+				<img
+					src="https://via.placeholder.com/160"
+					class="is-rounded avatar"
+				/>
+				<Button icon={mdiBell} primary />
+			</div>
+			
 		</svelte:fragment>
 	</Nav>
 </header>

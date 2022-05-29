@@ -10,14 +10,16 @@
 <Container style="padding-top:20px;">
 	<Banner />
 	<Row>
-		<Col size="9" style="column-count:2;" >
-			<ResCard/>
-			<ResCard/>
-			<ResCard/>
-			<ResCard/>
-			<ResCard/>
-			<ResCard/>
-			<ResCard/>
+		<Col size="9">
+			<div class="grid">
+				<ResCard />
+				<ResCard />
+				<ResCard />
+				<ResCard />
+				<ResCard />
+				<ResCard />
+				<ResCard />
+			</div>
 		</Col>
 		<Col size="3" />
 	</Row>
@@ -27,6 +29,11 @@
 	:global(:root) {
 		--grid-maxWidth: 120rem !important;
 		--color-primary: #4caf50 !important;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 400px 400px;
+		grid-column-gap: 20px;
 	}
 	.border {
 		padding-top: 10px;
