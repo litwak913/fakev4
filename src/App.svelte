@@ -4,6 +4,7 @@
 	import AppBar from "./AppBar.svelte";
 	import ResCard from "./ResCard.svelte";
 	import Banner from "./Banner.svelte";
+import Aside from "./Aside.svelte";
 </script>
 
 <AppBar />
@@ -22,7 +23,9 @@
 				<ResCard />
 			</div>
 		</Col>
-		<Col size="3" />
+		<Col size="3">
+			<Aside/>
+		</Col>
 	</Row>
 </Container>
 <style>
@@ -32,7 +35,7 @@
 	}
 	.grid {
 		display: grid;
-		grid-template-columns: 400px 400px;
-		grid-column-gap: 20px;
+		grid-template-columns: 450px 450px;
+		/* grid-column-gap: 20px; */
 	}
 </style>
