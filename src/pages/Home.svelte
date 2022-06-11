@@ -10,7 +10,7 @@
 <Row>
 	<Col size="9">
 	<Row>
-	<Col size="9">
+	<Col size="10">
 		<Field gapless>
 			<Button primary>10</Button>
 			<Button outline>20</Button>
@@ -18,7 +18,7 @@
 			<Button outline>100</Button>
 		</Field>
 	</Col>
-	<Col size="3" class="is-horizontal-align">
+	<Col size="2" class="is-horizontal-align">
 		<Field gapless>
 			<Button primary icon={mdiViewAgendaOutline} />
 			<Button outline icon={mdiViewHeadline} />
