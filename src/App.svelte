@@ -1,10 +1,11 @@
 <script lang="ts">
 	import "chota";
 	import { Container, Row, Col } from "svelte-chota";
+	import {faker} from "@faker-js/faker"
 	import AppBar from "./AppBar.svelte";
-	import ResCard from "./ResCard.svelte";
+	import ResCard from "./components/ResCard.svelte";
 	import Banner from "./Banner.svelte";
-import Aside from "./Aside.svelte";
+	import Aside from "./components/HomeAside.svelte";
 </script>
 
 <AppBar />
@@ -13,14 +14,9 @@ import Aside from "./Aside.svelte";
 	<Row>
 		<Col size="9">
 			<div class="grid">
-				<ResCard />
-				<ResCard />
-				<ResCard />
-				<ResCard />
-				<ResCard />
-				<ResCard />
-				<ResCard />
-				<ResCard />
+				{#each [1,2,3,4,5,6,7,8] as i}
+					<ResCard user={faker.internet.userName()} unixtimestamp={faker.date.recent().valueOf()}/>
+				{/each}
 			</div>
 		</Col>
 		<Col size="3">
@@ -35,7 +31,8 @@ import Aside from "./Aside.svelte";
 	}
 	.grid {
 		display: grid;
-		grid-template-columns: 450px 450px;
+		grid-template-columns: repeat(2,calc(75% - var(--grid-gutter)));
+                width: calc(75% - var(--grid-gutter));
 		/* grid-column-gap: 20px; */
 	}
 </style>

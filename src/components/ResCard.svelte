@@ -1,17 +1,19 @@
 <script lang="ts">
     import { Card, Tag, Icon, Row, Col } from "svelte-chota";
+    import moment from 'moment';
     import { mdiAccount, mdiClockOutline } from "@mdi/js";
     export let tags:Array<string>=["1.16.5","test"];
     export let title:string="Test"
-    export let des:string="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore"
+    export let des:string="test test"
     export let user:string="User"
-    export let time:number=0
+    export let unixtimestamp:number=1654947858884
+    export let imgsrc:string="https://via.placeholder.com/80"
 </script>
 
 <div class="res">
 <Card>
     <Row>
-        <Col size="4"><img src="https://via.placeholder.com/80" /></Col>
+        <Col size="4"><img src="{imgsrc}" alt="{title}"/></Col>
         <Col size="8">
             <div>
                 <p class="is-marginless res-title">{title}</p>
@@ -28,7 +30,7 @@
     <Icon class="text-grey" src={mdiAccount} />
     <span class="text-grey">{user}</span>
     <Icon class="text-grey" src={mdiClockOutline} />
-    <span class="text-grey">1970/01/01 08:00:00</span>
+    <span class="text-grey">{moment(unixtimestamp).format("YYYY/MM/DD HH:mm:ss")}</span>
 </Card>
 </div>
 
@@ -37,7 +39,7 @@
         font-size: 150%;
     }
     .res {
-        width: 430px;
+        width: calc(100% - var(--grid-gutter));
         margin: 10px 0;
         page-break-inside: avoid;
     }
