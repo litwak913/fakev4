@@ -1,0 +1,46 @@
+<script lang="ts">
+	import {faker} from "@faker-js/faker"
+	import { Row, Col,Field,Button } from "svelte-chota";
+	import ResCard from "../components/ResCard.svelte";
+	import Banner from "../Banner.svelte";
+	import Aside from "../components/HomeAside.svelte";
+</script>
+<Banner />
+<Row>
+	<Col size="9">
+	<Row>
+	<Col size="9">
+		<Field gapless>
+			<Button primary>10</Button>
+			<Button outline>20</Button>
+			<Button outline>50</Button>
+			<Button outline>100</Button>
+		</Field>
+	</Col>
+	<Col size="3" class="is-horizontal-align">
+		<Field gapless>
+			<Button primary>AA</Button>
+			<Button outline>BB</Button>
+		</Field>
+	</Col>
+	</Row>
+	<div class="grid">
+		{#each [1,2,3,4,5,6,7,8] as i}
+			<ResCard user={faker.internet.userName()} unixtimestamp={faker.date.recent().valueOf()} des={faker.lorem.sentence(6)} />
+		{/each}
+	</div>
+	</Col>
+	<Col size="3">
+		<Aside/>
+	</Col>
+</Row>
+<style>
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2,calc(75% - var(--grid-gutter)));
+                width: calc(75% - var(--grid-gutter));
+	}
+	:global(.message) {
+		display:none;
+	}
+</style>
