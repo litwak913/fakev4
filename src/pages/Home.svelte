@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {faker} from "@faker-js/faker"
+	//import {faker} from "@faker-js/faker"
 	import { Row, Col,Field,Button } from "svelte-chota";
 	import ResCard from "../components/ResCard.svelte";
 	import Banner from "../Banner.svelte";
@@ -27,7 +27,7 @@
 	</Row>
 	<div class="grid">
 		{#each [1,2,3,4,5,6,7,8] as i}
-			<ResCard user={faker.internet.userName()} unixtimestamp={faker.date.recent().valueOf()} des={faker.lorem.sentence(6)} />
+			<ResCard />
 		{/each}
 	</div>
 	</Col>
