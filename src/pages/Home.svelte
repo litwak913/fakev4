@@ -4,6 +4,7 @@
 	import ResCard from "../components/ResCard.svelte";
 	import Banner from "../Banner.svelte";
 	import Aside from "../components/HomeAside.svelte";
+	import {mdiViewAgendaOutline,mdiViewHeadline} from "@mdi/js"
 </script>
 <Banner />
 <Row>
@@ -19,8 +20,8 @@
 	</Col>
 	<Col size="3" class="is-horizontal-align">
 		<Field gapless>
-			<Button primary>AA</Button>
-			<Button outline>BB</Button>
+			<Button primary icon={mdiViewAgendaOutline} />
+			<Button outline icon={mdiViewHeadline} />
 		</Field>
 	</Col>
 	</Row>
